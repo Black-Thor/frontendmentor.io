@@ -5,40 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c9b43d3d94.js" crossorigin="anonymous"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
+  <img class="splitter" src="images/logo.svg" alt="logo">
 
-  Bill
+  <div class="white_frame">
+    
+    <div class="block">
+      <div class="Bill">
+        <label for="bill-amount" > Bill</label>  </br>
+        <span class="bill-input"> $<input type="number" id="bill-amount" name="bill-amount" placeholder="0" min="0"></span>
+      </div>
+      
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+      
+      <div>
+        <label for="Select">Select Tip % </label> </br>
+        <div class="wrapper">
+          <button> 5% </button>
+          <button> 10% </button>
+          <button> 15% </button>
+          <button> 25% </button>
+          <button> 50% </button>
+          <button > <input type="number" placeholder="Custom"> </button>
+        </div>
+        
+      </div>
 
-  Number of People
+      <div>
+        <label for="Number"> Number of People </label>
+        <span class="people-input"><i class="fas fa-user"></i>
+          <input type="number" id="no-of-people" name="no-of-people" min="0" placeholder="0">
+        </span>
+      </div>
+    </div>
 
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
+    <div class="green_frame">
+      <h2>Tip Amount</br> /person </h2> </br>
+      <output > 0.00</output>
   
+      <h2>Total   </br>      / person</h2> </br>
+      <output > 0.00</output>
+      <button>Reset </button>
+    </div>
+
+  </div>
+ 
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Stephane Duboze</a>.
   </div>
 </body>
 </html>
