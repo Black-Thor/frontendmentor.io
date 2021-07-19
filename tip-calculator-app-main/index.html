@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +12,9 @@
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
-  <img class="splitter" src="images/logo.svg" alt="logo">
-
+  <div class="splitter">
+  <img  src="images/logo.svg" alt="logo">
+</div>
   <div class="white_frame">
     
     <div class="block">
@@ -25,7 +27,7 @@
       
       <div>
         <label for="Select">Select Tip % </label> </br>
-        <div class="wrapper">
+        <div class="wrapper ">
           <button> 5% </button>
           <button> 10% </button>
           <button> 15% </button>
@@ -45,12 +47,30 @@
     </div>
 
     <div class="green_frame">
-      <h2>Tip Amount</br> /person </h2> </br>
-      <output > 0.00</output>
-  
-      <h2>Total   </br>      / person</h2> </br>
-      <output > 0.00</output>
-      <button>Reset </button>
+      <div class="row">
+        <div class="tip-amount-text">
+          <p>Tip Amount</p>
+          <span class="per-person">/ person</span>
+        </div>
+        <div class=" output">
+          <span class="tip-output">$<output id="tip-per-head" name="result-per-head">0.00</output></span>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="tip-amount-text">
+          <p>Total </p>
+          <span class="per-person">/ person</span>
+        </div>
+        <div class=" output">
+          <span class="tip-output">$<output id="tip-per-head" name="result-per-head">0.00</output></span>
+        </div>
+      </div>
+      <br>
+      
+      <div class="reset">
+        <button>Reset </button>
+      </div>
     </div>
 
   </div>

@@ -10,24 +10,30 @@ body{
 
 
 /* ---------------------- Logo ----------------------*/
-
+.splitter{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
 
 /* ---------------------- Frame ----------------------*/
 
 .white_frame{
   background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
-  width: auto;
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .green_frame{
     background-color:hsl(172, 67%, 45%) ;
     border-radius: 10px;
     width: 20em;
-    display: flex;
+   
 
 }
 .block {
@@ -48,24 +54,30 @@ input{
     background-color: hsl(189, 41%, 97%);
     font-family: inherit;
     font-size: 1.5rem;
+  
+  font-weight: 700;
     border: 0;
     border-radius: 10px;
     margin: 0;
     padding: 0;
     text-align-last: right;
+    margin-bottom: 1rem;
+    
 }
 .bill-input input {
-    font-weight: 700;
+    border: 1px solid blue;
     color: hsl(183, 100%, 15%);
-    border: 0;
     background-color: inherit;
+    font-size: 1.5rem;
+    font-weight: 700;
     width: 91%;
     padding: 0;
-    margin: 0.5% 1.75% 0.5% 2.5%;
+    border: 0;
+    margin: 0.5%;
   }
 
 .bill-input:hover {
-    border: 2px solid hsl(172, 67%, 45%);
+    border:2px  solid hsl(172, 67%, 45%);
 }
 .bill-input:focus {
     border: 2px solid hsl(172, 67%, 45%);
@@ -77,9 +89,12 @@ input{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    margin-bottom: 1rem;
 }
 
 div.wrapper>button {
+    font-weight: 900;
+    font-size: 0.8em;
     width: 9em;
     height: 3em;
     background-color:  hsl(183, 100%, 15%);
@@ -87,6 +102,39 @@ div.wrapper>button {
     border-radius: 5px;
 }
 div.wrapper>button:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+.per-person {
+    font-size: 0.85rem;
+    color:  hsl(185, 41%, 84%);
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.output {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:  hsl(185, 41%, 84%);
+    text-align: right;
+}
+
+.tip-amount-text p {
+    line-height: 1;
+    margin: 1rem;
+}
+  
+div.reset>button {
+    font-weight: 900;
+    font-size: 0.8em;
+    width: 9em;
+    height: 3em;
+    background-color:  hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 5px;
+}
+div.reset>button:hover{
+
     background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
 }
@@ -100,6 +148,8 @@ div.wrapper>button:hover{
   padding: 0;
   text-align-last: right;
   border-radius: 10px;
+  margin-bottom: 1rem;
+  
 }
 .people-input input {
     border: 1px solid blue;
@@ -113,12 +163,59 @@ div.wrapper>button:hover{
   margin: 0.5%;
 
   }
+.people-input:hover {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+.people-input:focus {
+    border: 2px solid hsl(172, 67%, 45%);
+  }
+/* ---------------------- Tip amount ----------------------*/
+/*.green_frame{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 1rem;
+}*/
+.row{
+    display: flex;
+    align-self: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.reset{
+    text-align: center;
+}
 
 
 /* ---------------------- Footer ----------------------*/
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+/* ---------------------- Footer ----------------------*/
+
+.error {
+    border: 2px solid #f05;
+}
+  
+.error:hover {
+    border: 2px solid #f05;
+}
+  
+.error:focus {
+    border: 2px solid #f05;
+}
+
+.error-text {
+    position: relative;
+    top: 1rem;
+    font-size: 1rem;
+    text-align: right;
+    margin: 0 1rem 0 0;
+    color: #f05;
+}
 
 
 /* ---------------------- Input arrow hidding ----------------------*/
